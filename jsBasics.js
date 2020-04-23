@@ -98,7 +98,7 @@ function getName(){
 
 }
 
-const getName=()=>{
+const getName2=()=>{
    user.name
 }
 
@@ -120,7 +120,7 @@ function getWeekDay(){
   return calendar.weekDays [2];
 }
 
-const getWeekDay=()=>{
+const getWeekDay2=()=>{
   calendar.weekDays[2];
 }
 
@@ -155,7 +155,185 @@ let myCar=null;
 
 
 
+// Create a variable called family
+// family should be an object
+// family should contain three properties, which will be names of people (you can choose these names)
+// The values for the names of those people will be objects
+// The people objects will have a property called hobbies
+// hobbies should be an object.
+
+
+
+const family={
+  'andrea':{hobbies:{}},
+  'cam':{hobbies:{}},
+  'leilani':{hobbies:{}}
+
+}
+console.log(family)
 
 
 
 
+
+// Create a variable called gameScores
+// gameScores should be an array
+// gameScores should have three items in it
+// gameScores' items should be arrays with two items(numbers) in each array
+
+
+const gameScores= [
+  [24],
+  [49]
+]
+console.log(gameScores)
+
+
+
+
+// Create a variable called people
+// people should be an array of 3 objects
+// The objects should have 3 properties (name, gender, height)
+// The name and gender properties should have string values
+// The height property should have a number value
+
+
+const people = [
+  {
+    name:'cam',
+    gender:'male',
+    height: 56
+  },
+  {
+    name:'doug',
+    gender: 'male',
+    height:243
+  },
+  {
+    name: 'ash',
+    gender: 'female',
+    height:55545
+  }
+]
+console.log(people)
+
+
+
+// Create a variable called awesome.
+// awesome should have a value, which type is boolean.
+// awesome should have a value of true.
+
+const awesome= true;
+
+
+console.log(awesome)
+
+
+
+// Make a function called favFood that does not take in any parameters.
+// The function should return a string that has a value of  "My favorite food is pizza"
+// Instead of explicitly typing "pizza", make reference to the existing variable called food.
+
+// Use template strings.
+// Do not use concatenation ("My favorite food is " + food)
+
+const food = "pizza";
+
+const favFood = () => {
+  return `My favorite food is ${food}`
+}
+
+console.log(favFood)
+
+function favFoodTwo(){
+  return `My favorite food is ${food}`
+
+}
+console.log(favFoodTwo)
+
+
+
+// Create a variable called cowboy
+// cowboy should be an object with these properties: name, state, favoriteCountrySong
+// The property values should all be strings
+
+const cowboy = {
+  name: 'Cam',
+  state: 'Utah',
+  favoriteCountrySong: 'Hates country music'
+}
+console.log(cowboy)
+
+
+
+// Create an array called dataTypes
+// dataTypes should have the following items:
+//          the number 42
+//          the string "meaning"
+//          the boolean true
+//          an array with 5 numbers
+//          the object spaceship
+//          the function launch
+
+
+
+
+
+
+let spaceship = {
+  fuel: "liquid hydrogen",
+  topSpeed: 36000,
+  fuelLevel: 100,
+  altitude: 0
+}
+
+function launch(){
+  spaceship.fuelLevel -= 30;
+  spaceship.altidude += 1000
+}
+
+const dataTypes = [
+  42,
+  'meaning',
+  true,
+  [
+    4,
+    3,
+    2,
+    1,
+    5
+  ],
+  {
+    spaceship
+  },
+  launch
+]
+
+console.log(dataTypes)
+
+
+//FUNCTIONS
+
+
+// Create a function called "fn" that takes in a parameter and returns that parameter.
+
+function fn(parameter){
+  return parameter;
+}
+console.log(fn)
+
+
+
+// Write a function called createName.
+// The function should return a single string value, which will be the result of concatenating the existing variables firstName and lastName.
+
+// NOTE: the returned value should have a space between the original two strings
+
+// For example, with the existing variable values, createName should return "Jeremy Robertson":
+
+const firstName = "Jeremy";
+const lastName = "Robertson";
+
+function createName(){
+  return 
+}
