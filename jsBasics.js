@@ -334,6 +334,10 @@ console.log(fn)
 const firstName = "Jeremy";
 const lastName = "Robertson";
 
-function createName(){
-  return 
+function createName(firstName, lastName){
+  return firstName + ' ' + lastName
 }
+console.log(createName)
+
+
+
