@@ -320,7 +320,7 @@ console.log(dataTypes)
 function fn(parameter){
   return parameter;
 }
-console.log(fn)
+console.log(fn())
 
 
 
@@ -331,14 +331,14 @@ console.log(fn)
 
 // For example, with the existing variable values, createName should return "Jeremy Robertson":
 
+
 const firstName = "Jeremy";
 const lastName = "Robertson";
-
 function createName(firstName, lastName){
-  const names = firstName + ' ' + lastName
-  return names
+  // const names = 
+  return `${firstName} + ' ' + ${lastName}`
 }
-console.log(createName)
+console.log(createName())
 
 
 
@@ -348,7 +348,7 @@ function showMeSeven(){
   return 7;
 }
 
-console.log(showMeSeven)
+console.log(showMeSeven())
 
 
 
@@ -360,10 +360,11 @@ const number= 3;
 const numberTwo= 5;
 
 function multiplierOne(number, numberTwo){
+
   return number + numberTwo
 
 }
-console.log(multiplierOne)
+console.log(multiplierOne())
 
 
 // Write a function called sayHello that has two parameters--greeting, and firstName (these will be strings).
@@ -372,9 +373,9 @@ console.log(multiplierOne)
 // For example, if we invoke sayHello passing in "Hello, " as the first parameter, and "Jeremy."  as the second parameter, it should return "Hello, Jeremy."
 
 function sayHello(hello, cam){
-return hello + cam
+return 'hello' + 'cam'
 }
-console.log(sayHello)
+console.log(sayHello())
 
 
 
@@ -382,11 +383,22 @@ console.log(sayHello)
 // Create a function called makeExercise that has two parameters-- exerciseName(string) and duration(number).
 // The function should return an object with two key-value pairs. The first property name should be "exerciseName" with a value of the first parameter. The second property name should be "duration" with a value of the second parameter.
 
-function makeExercise('run', 10){
+function makeExercise(exerciseName, duration){
   return {
-    
+    exerciseName: 'run',
+    duration: 10
   }
 }
+console.log(makeExercise())
+
+
+
+//IF STATEMENTS
+
+// Inside the isOldEnough function write an if/else statement that will return "old enough" if the variable  age is greater than 21 and return "not yet" other wise.
+
+// Use the if and else keywords in your final solution.
+// The variable age will be changed during testing.
 
 
 
