@@ -335,9 +335,59 @@ const firstName = "Jeremy";
 const lastName = "Robertson";
 
 function createName(firstName, lastName){
-  return firstName + ' ' + lastName
+  const names = firstName + ' ' + lastName
+  return names
 }
 console.log(createName)
+
+
+
+// Create a function called showMeSeven that returns the number 7.
+
+function showMeSeven(){
+  return 7;
+}
+
+console.log(showMeSeven)
+
+
+
+
+// Create a function called multiplier that has two parameters (these will be numbers).
+// The function should return the product of the two numbers.
+
+const number= 3;
+const numberTwo= 5;
+
+function multiplierOne(number, numberTwo){
+  return number + numberTwo
+
+}
+console.log(multiplierOne)
+
+
+// Write a function called sayHello that has two parameters--greeting, and firstName (these will be strings).
+// The function should return a single string value, which will be the result of concatenating greeting and firstName.
+
+// For example, if we invoke sayHello passing in "Hello, " as the first parameter, and "Jeremy."  as the second parameter, it should return "Hello, Jeremy."
+
+function sayHello(hello, cam){
+return hello + cam
+}
+console.log(sayHello)
+
+
+
+
+// Create a function called makeExercise that has two parameters-- exerciseName(string) and duration(number).
+// The function should return an object with two key-value pairs. The first property name should be "exerciseName" with a value of the first parameter. The second property name should be "duration" with a value of the second parameter.
+
+function makeExercise('run', 10){
+  return {
+    
+  }
+}
+
 
 
 
