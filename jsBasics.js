@@ -402,4 +402,83 @@ console.log(makeExercise())
 
 
 
+let age = 25;
+
+function isOldEnough(){
+  if(age > 21){
+    return 'old enough'
+  }
+  else{
+    return 'not yet'
+  }
+}
+console.log(isOldEnough())
+
+
+// Inside the successPredictor function write an if/else statement that will return "success at DevMountain" if the variable  workEthic is equal to "great" and return "failure at DevMountain" otherwise.  
+
+// Use the if and else keywords in your final solution.
+// The variable workEthic will be changed during testing.
+
+
+
+
+let workEthic = 'great';
+
+function successPredicter(){
+  if( 
+    workEthic === 'great'
+  ){
+    return 'success at DevMountain'
+  }
+  else {
+    return 'failure at DevMountain'
+  }
+}
+console.log(successPredicter())
+
+
+
+
+// Inside the eatOrTrash function write an if/else statement that will return "throw in trash" if the variable cookieType is equal to "raisin" and return "eat" other wise. 
+
+// Use the if and else keywords in your final solution.
+// The variable cookieType will be changed during testing.
+
+let cookieType = "raisin";
+
+function eatOrTrash(){
+  if(cookieType === 'raisin'){
+    return 'throw in trash'
+  }
+  else{
+    return 'eat'
+  }
+}
+console.log(eatOrTrash())
+
+
+
+
+// Inside the finalScore function write an if/else statement that will return "we are the champions" if the variable myTeamScore is greater than the variable yourTeamScore and return ":(" otherwise. 
+
+// Use the if and else keywords in your final solution.
+// The variables myTeamScore and yourTeamScore will be changed during testing.
+
+
+var myTeamScore = 45;
+var yourTeamScore = 21;
+
+function finalScore(){
+  if (
+    myTeamScore > yourTeamScore
+  ){
+    return 'we are the champions'
+  }
+  else{
+    return ':('
+  }
+}
+console.log(finalScore())
+
 
