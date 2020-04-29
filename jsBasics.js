@@ -541,3 +541,98 @@ function canIGetIceCream(){
 console.log(canIGetIceCream())
 
 
+
+
+// Inside the doIHaveFreeTime function write an if/else statement that will return "free time!" if either chores or work are false. Use the logical NOT operator(bang operator) to complete this problem.
+ 
+// Do not use the true of false keywords in your final solution.
+// Use the if and else keywords in your final solution.
+// The variables chores and work will always be a true or false and be changed during testing.
+
+let chores = false;
+let work = false;
+
+function doIHaveFreeTime(){
+  if( 
+    chores !== true && work !== true
+  ){
+    return 'free time!'
+  }else{
+    return 'bummer'
+  }
+  
+}
+console.log(doIHaveFreeTime())
+
+
+
+// Inside the setCrash function write an if/else statement that will set the value of crash to true if currentSpeed if equal to "fast" and brakes are false. Otherwise do nothing.
+
+// Use the if and else keywords in your final solution.
+// The variable currentSpeed will always be a string and will change during testing.
+// The variable brakes will always be true or false and will change during testing.
+
+let currentSpeed = "fast";
+let brakes = true;
+let crash = false;
+
+function setCrash(){
+  if(
+    currentSpeed === 'fast' && brakes === false
+  ){
+    return crash = true 
+  }else{
+    return crash = false;
+  }
+}
+console.log(setCrash())
+
+
+// Write a function called makePurchase that takes in a parameter called priceOfItem. If the priceOfItem is less than or equal to the total on the user object, have the makePurchase function subtract the priceOfItem from the current users total. If the priceOfItem is greater than the total in the user object then have the function return "not enough funds".
+
+// Use the if and else keywords in your final solution.
+// The arguments passed into the makePurchase function will always be numbers.
+
+var user = {
+  name: "Tiffany",
+  total: 50
+}
+const priceOfItem = 15;
+
+const makePurchase = (priceOfItem) => {
+  if(
+    priceOfItem <= user.total
+  ){
+    return user.total - priceOfItem
+  }else if(
+    priceOfItem >= user.total
+  ){
+    return 'not enough funds'
+  }
+}
+console.log(makePurchase())
+
+
+
+// Write a function called decisionMaker that takes two parameters, the first one called hungry and next called tired. Have your function react according to the following scenarios.
+
+// If hungry is true and tired is false, invoke the function called eat.
+// If hungry is false and tired is true, invoke the function called sleep.
+// Otherwise have the decisionMaker function return "undecided".
+// Use the if and else keywords in your final solution.
+// The arguments passed into the decisionMaker function will always be true or false.
+
+var hunger;
+var fatigue;
+
+function eat(){
+  hunger = "gone";
+  return "yum yum";
+}
+
+function sleep(){
+  fatigue = "gone";
+  return "zzz zzz zzz";
+}
+
+// Your Code Here
