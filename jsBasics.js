@@ -86,21 +86,21 @@ console.log(theBoss)
 // You are provided with a user object and a function called getName. 
 // Edit the getName function so that it accesses the name property of the user object using dot notation and returns its value.
 
-const user = {
-  name: "Billy",
-  age: 18,
-  email: "billy123@billy.com"
-}
+// const user = {
+//   name: "Billy",
+//   age: 18,
+//   email: "billy123@billy.com"
+// }
 
 
-function getName(){
-  return user.name
+// function getName(){
+//   return user.name
 
-}
+// }
 
-const getName2=()=>{
-   user.name
-}
+// const getName2=()=>{
+//    user.name
+// }
 
 
 
@@ -134,17 +134,17 @@ const getWeekDay2=()=>{
 // name should be a string.
 // age should be a number.
 
-let users = [
-  {
-    name: 'jon',
-    age:20
-  },
-  {
-    name:'mike',
-    age:49
-  }
+// let users = [
+//   {
+//     name: 'jon',
+//     age:20
+//   },
+//   {
+//     name:'mike',
+//     age:49
+//   }
 
-]
+// ]
 
 
 
@@ -480,5 +480,64 @@ function finalScore(){
   }
 }
 console.log(finalScore())
+
+
+
+
+// Inside the findCorrectTransportation function write an if/else statement that will return check the variable age and return the correct response according to the following criteria.
+
+ 
+// If age is from 3 to 7 "tricycle".
+// If age is from 8 to 15 "bicycle".
+// If age is 16 or greater return "car".
+// Use the if and else keywords in your final solution.
+// The variable age will always be a number and be changed during testing. 
+
+
+let ageOne = "28";
+
+function findCorrectTransportation(){
+  if(
+    ageOne >= 3 && ageOne <= 7
+  ){
+    return 'tricycle'
+  }else if(
+    ageOne >= 8 && ageOne <= 15
+  ){
+    return 'bicycle'
+  }else if(
+    ageOne >= 16
+  ){
+    return 'car'
+  }
+  
+}
+console.log(findCorrectTransportation())
+
+
+
+
+
+// Inside the doIGetIceCream function write an if/else statement that will return check the variables money and temp and return the correct response according to the following criteria.
+ 
+// If temp is equal to "hot" and money is true return "Get Ice Cream!".
+// Otherwise return "Save up for another day.".
+// Use the if and else keywords in your final solution.
+// The variable temp will always be a string and will change during testing.
+// The variable money will always be true or false and will change during testing.
+
+let temp = "hot";
+let moneyOne = false;
+
+function canIGetIceCream(){
+  if(
+    temp === 'hot' && moneyOne === true
+  ){
+    return 'Get Ice Cream!'
+  }else{
+    return 'Save up for another day.'
+  }
+}
+console.log(canIGetIceCream())
 
 
