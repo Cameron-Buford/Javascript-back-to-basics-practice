@@ -614,25 +614,49 @@ console.log(makePurchase())
 
 
 
-// Write a function called decisionMaker that takes two parameters, the first one called hungry and next called tired. Have your function react according to the following scenarios.
 
-// If hungry is true and tired is false, invoke the function called eat.
-// If hungry is false and tired is true, invoke the function called sleep.
-// Otherwise have the decisionMaker function return "undecided".
-// Use the if and else keywords in your final solution.
-// The arguments passed into the decisionMaker function will always be true or false.
 
-var hunger;
-var fatigue;
 
-function eat(){
-  hunger = "gone";
-  return "yum yum";
+
+//MORE JAVASCRIPT
+
+//ARRAYS
+
+// Return the first element in the array that is being passed in.
+
+// function first( arr ) {
+//   var firstItem = arr[0]
+//   return firstItem;
+// }
+
+
+// const first = (arr) => {
+//   const arr = ['hi', 1, 4, 'no']
+//   const firstItem = arr[0]
+//   return firstItem
+// }
+// console.log(first())
+
+
+
+// Add a number to the end of the array that is being passed in.
+
+function addItem( array, number ) {
+  array.push(number)  
+  return array;
 }
 
-function sleep(){
-  fatigue = "gone";
-  return "zzz zzz zzz";
+
+// Remove the last element from the array that is being passed in.
+
+const popItem = (arra) => {
+  arra.pop()
+  return arra
 }
 
-// Your Code Here
+
+
+
+
+
+
